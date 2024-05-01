@@ -1,0 +1,17 @@
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\bin\x64\Debug\Assignment1.exe.config
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\bin\x64\Debug\Assignment1.exe
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\bin\x64\Debug\Assignment1.pdb
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.csproj.AssemblyReference.cache
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.ArenaForm.resources
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.Properties.Resources.resources
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.csproj.GenerateResource.cache
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.csproj.CoreCompileInputs.cache
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.exe
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.pdb
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.DataModule.resources
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.MainForm.resources
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\bin\x64\Debug\FontAwesome.Sharp.dll
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.csproj.CopyComplete
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.ChallengeForm.resources
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.CompetitorReportForm.resources
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.EventReportForm.resources

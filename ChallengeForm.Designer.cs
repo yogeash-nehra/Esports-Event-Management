@@ -65,7 +65,23 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtAddChallengeName = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.panelUpdateChallenge = new System.Windows.Forms.Panel();
+            this.txtUpdateStatus = new System.Windows.Forms.TextBox();
+            this.txtUpdateEventName = new System.Windows.Forms.TextBox();
+            this.txtUpdateChlngeID = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtUpdateStartTime = new System.Windows.Forms.DateTimePicker();
+            this.btnUpdateCancel = new System.Windows.Forms.Button();
+            this.btnUpdateSave = new System.Windows.Forms.Button();
+            this.txtUpdateCapacity = new System.Windows.Forms.DomainUpDown();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtUpdateChlngeName = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.panelAddChallenge.SuspendLayout();
+            this.panelUpdateChallenge.SuspendLayout();
             this.SuspendLayout();
             // 
             // lstChallenge
@@ -77,6 +93,7 @@
             this.lstChallenge.Name = "lstChallenge";
             this.lstChallenge.Size = new System.Drawing.Size(256, 424);
             this.lstChallenge.TabIndex = 0;
+            this.lstChallenge.SelectedIndexChanged += new System.EventHandler(this.lstChallenge_SelectedIndexChanged);
             // 
             // lblChallengeID
             // 
@@ -321,7 +338,7 @@
             this.panelAddChallenge.Controls.Add(this.label10);
             this.panelAddChallenge.Controls.Add(this.txtAddChallengeName);
             this.panelAddChallenge.Controls.Add(this.label11);
-            this.panelAddChallenge.Location = new System.Drawing.Point(574, 12);
+            this.panelAddChallenge.Location = new System.Drawing.Point(392, 34);
             this.panelAddChallenge.Name = "panelAddChallenge";
             this.panelAddChallenge.Size = new System.Drawing.Size(435, 466);
             this.panelAddChallenge.TabIndex = 23;
@@ -371,6 +388,47 @@
             // 
             // addCapacity
             // 
+            this.addCapacity.Items.Add("40");
+            this.addCapacity.Items.Add("39");
+            this.addCapacity.Items.Add("38");
+            this.addCapacity.Items.Add("37");
+            this.addCapacity.Items.Add("36");
+            this.addCapacity.Items.Add("35");
+            this.addCapacity.Items.Add("34");
+            this.addCapacity.Items.Add("33");
+            this.addCapacity.Items.Add("32");
+            this.addCapacity.Items.Add("31");
+            this.addCapacity.Items.Add("30");
+            this.addCapacity.Items.Add("29");
+            this.addCapacity.Items.Add("28");
+            this.addCapacity.Items.Add("27");
+            this.addCapacity.Items.Add("26");
+            this.addCapacity.Items.Add("25");
+            this.addCapacity.Items.Add("24");
+            this.addCapacity.Items.Add("23");
+            this.addCapacity.Items.Add("22");
+            this.addCapacity.Items.Add("21");
+            this.addCapacity.Items.Add("20");
+            this.addCapacity.Items.Add("19");
+            this.addCapacity.Items.Add("18");
+            this.addCapacity.Items.Add("17");
+            this.addCapacity.Items.Add("16");
+            this.addCapacity.Items.Add("15");
+            this.addCapacity.Items.Add("14");
+            this.addCapacity.Items.Add("13");
+            this.addCapacity.Items.Add("12");
+            this.addCapacity.Items.Add("11");
+            this.addCapacity.Items.Add("10");
+            this.addCapacity.Items.Add("9");
+            this.addCapacity.Items.Add("8");
+            this.addCapacity.Items.Add("7");
+            this.addCapacity.Items.Add("6");
+            this.addCapacity.Items.Add("5");
+            this.addCapacity.Items.Add("4");
+            this.addCapacity.Items.Add("3");
+            this.addCapacity.Items.Add("2");
+            this.addCapacity.Items.Add("1");
+            this.addCapacity.Items.Add("0");
             this.addCapacity.Location = new System.Drawing.Point(166, 311);
             this.addCapacity.Name = "addCapacity";
             this.addCapacity.Size = new System.Drawing.Size(100, 26);
@@ -379,6 +437,10 @@
             // comboAddStatus
             // 
             this.comboAddStatus.FormattingEnabled = true;
+            this.comboAddStatus.Items.AddRange(new object[] {
+            "Scheduled",
+            "Finished",
+            "Completed"});
             this.comboAddStatus.Location = new System.Drawing.Point(166, 243);
             this.comboAddStatus.Name = "comboAddStatus";
             this.comboAddStatus.Size = new System.Drawing.Size(234, 28);
@@ -450,11 +512,213 @@
             this.label11.TabIndex = 15;
             this.label11.Text = "Challenge Name:";
             // 
+            // panelUpdateChallenge
+            // 
+            this.panelUpdateChallenge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelUpdateChallenge.Controls.Add(this.txtUpdateStatus);
+            this.panelUpdateChallenge.Controls.Add(this.txtUpdateEventName);
+            this.panelUpdateChallenge.Controls.Add(this.txtUpdateChlngeID);
+            this.panelUpdateChallenge.Controls.Add(this.label17);
+            this.panelUpdateChallenge.Controls.Add(this.txtUpdateStartTime);
+            this.panelUpdateChallenge.Controls.Add(this.btnUpdateCancel);
+            this.panelUpdateChallenge.Controls.Add(this.btnUpdateSave);
+            this.panelUpdateChallenge.Controls.Add(this.txtUpdateCapacity);
+            this.panelUpdateChallenge.Controls.Add(this.label12);
+            this.panelUpdateChallenge.Controls.Add(this.label13);
+            this.panelUpdateChallenge.Controls.Add(this.label14);
+            this.panelUpdateChallenge.Controls.Add(this.label15);
+            this.panelUpdateChallenge.Controls.Add(this.txtUpdateChlngeName);
+            this.panelUpdateChallenge.Controls.Add(this.label16);
+            this.panelUpdateChallenge.Location = new System.Drawing.Point(388, 34);
+            this.panelUpdateChallenge.Name = "panelUpdateChallenge";
+            this.panelUpdateChallenge.Size = new System.Drawing.Size(435, 466);
+            this.panelUpdateChallenge.TabIndex = 24;
+            this.panelUpdateChallenge.Visible = false;
+            // 
+            // txtUpdateStatus
+            // 
+            this.txtUpdateStatus.Location = new System.Drawing.Point(164, 246);
+            this.txtUpdateStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUpdateStatus.Name = "txtUpdateStatus";
+            this.txtUpdateStatus.ReadOnly = true;
+            this.txtUpdateStatus.Size = new System.Drawing.Size(234, 26);
+            this.txtUpdateStatus.TabIndex = 36;
+            // 
+            // txtUpdateEventName
+            // 
+            this.txtUpdateEventName.Location = new System.Drawing.Point(166, 132);
+            this.txtUpdateEventName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUpdateEventName.Name = "txtUpdateEventName";
+            this.txtUpdateEventName.ReadOnly = true;
+            this.txtUpdateEventName.Size = new System.Drawing.Size(234, 26);
+            this.txtUpdateEventName.TabIndex = 35;
+            // 
+            // txtUpdateChlngeID
+            // 
+            this.txtUpdateChlngeID.Location = new System.Drawing.Point(166, 22);
+            this.txtUpdateChlngeID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUpdateChlngeID.Name = "txtUpdateChlngeID";
+            this.txtUpdateChlngeID.ReadOnly = true;
+            this.txtUpdateChlngeID.Size = new System.Drawing.Size(234, 26);
+            this.txtUpdateChlngeID.TabIndex = 34;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(54, 25);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(105, 20);
+            this.label17.TabIndex = 33;
+            this.label17.Text = "Challenge ID:";
+            // 
+            // txtUpdateStartTime
+            // 
+            this.txtUpdateStartTime.Checked = false;
+            this.txtUpdateStartTime.CustomFormat = "HH:mm";
+            this.txtUpdateStartTime.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.txtUpdateStartTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.txtUpdateStartTime.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtUpdateStartTime.Location = new System.Drawing.Point(166, 175);
+            this.txtUpdateStartTime.Name = "txtUpdateStartTime";
+            this.txtUpdateStartTime.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtUpdateStartTime.Size = new System.Drawing.Size(232, 26);
+            this.txtUpdateStartTime.TabIndex = 32;
+            this.txtUpdateStartTime.Value = new System.DateTime(2024, 5, 1, 11, 8, 50, 0);
+            // 
+            // btnUpdateCancel
+            // 
+            this.btnUpdateCancel.Location = new System.Drawing.Point(222, 390);
+            this.btnUpdateCancel.Name = "btnUpdateCancel";
+            this.btnUpdateCancel.Size = new System.Drawing.Size(149, 42);
+            this.btnUpdateCancel.TabIndex = 31;
+            this.btnUpdateCancel.Text = "Cancel";
+            this.btnUpdateCancel.UseVisualStyleBackColor = true;
+            this.btnUpdateCancel.Click += new System.EventHandler(this.btnUpdateCancel_Click);
+            // 
+            // btnUpdateSave
+            // 
+            this.btnUpdateSave.Location = new System.Drawing.Point(33, 390);
+            this.btnUpdateSave.Name = "btnUpdateSave";
+            this.btnUpdateSave.Size = new System.Drawing.Size(167, 42);
+            this.btnUpdateSave.TabIndex = 30;
+            this.btnUpdateSave.Text = "Save Challenge";
+            this.btnUpdateSave.UseVisualStyleBackColor = true;
+            this.btnUpdateSave.Click += new System.EventHandler(this.btnUpdateSave_Click);
+            // 
+            // txtUpdateCapacity
+            // 
+            this.txtUpdateCapacity.Items.Add("40");
+            this.txtUpdateCapacity.Items.Add("39");
+            this.txtUpdateCapacity.Items.Add("38");
+            this.txtUpdateCapacity.Items.Add("37");
+            this.txtUpdateCapacity.Items.Add("36");
+            this.txtUpdateCapacity.Items.Add("35");
+            this.txtUpdateCapacity.Items.Add("34");
+            this.txtUpdateCapacity.Items.Add("33");
+            this.txtUpdateCapacity.Items.Add("32");
+            this.txtUpdateCapacity.Items.Add("31");
+            this.txtUpdateCapacity.Items.Add("30");
+            this.txtUpdateCapacity.Items.Add("29");
+            this.txtUpdateCapacity.Items.Add("28");
+            this.txtUpdateCapacity.Items.Add("27");
+            this.txtUpdateCapacity.Items.Add("26");
+            this.txtUpdateCapacity.Items.Add("25");
+            this.txtUpdateCapacity.Items.Add("24");
+            this.txtUpdateCapacity.Items.Add("23");
+            this.txtUpdateCapacity.Items.Add("22");
+            this.txtUpdateCapacity.Items.Add("21");
+            this.txtUpdateCapacity.Items.Add("20");
+            this.txtUpdateCapacity.Items.Add("19");
+            this.txtUpdateCapacity.Items.Add("18");
+            this.txtUpdateCapacity.Items.Add("17");
+            this.txtUpdateCapacity.Items.Add("16");
+            this.txtUpdateCapacity.Items.Add("15");
+            this.txtUpdateCapacity.Items.Add("14");
+            this.txtUpdateCapacity.Items.Add("13");
+            this.txtUpdateCapacity.Items.Add("12");
+            this.txtUpdateCapacity.Items.Add("11");
+            this.txtUpdateCapacity.Items.Add("10");
+            this.txtUpdateCapacity.Items.Add("9");
+            this.txtUpdateCapacity.Items.Add("8");
+            this.txtUpdateCapacity.Items.Add("7");
+            this.txtUpdateCapacity.Items.Add("6");
+            this.txtUpdateCapacity.Items.Add("5");
+            this.txtUpdateCapacity.Items.Add("4");
+            this.txtUpdateCapacity.Items.Add("3");
+            this.txtUpdateCapacity.Items.Add("2");
+            this.txtUpdateCapacity.Items.Add("1");
+            this.txtUpdateCapacity.Items.Add("0");
+            this.txtUpdateCapacity.Location = new System.Drawing.Point(166, 311);
+            this.txtUpdateCapacity.Name = "txtUpdateCapacity";
+            this.txtUpdateCapacity.Size = new System.Drawing.Size(100, 26);
+            this.txtUpdateCapacity.TabIndex = 28;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(81, 311);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(74, 20);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "Capacity:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(97, 246);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(60, 20);
+            this.label13.TabIndex = 21;
+            this.label13.Text = "Status:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(73, 181);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(86, 20);
+            this.label14.TabIndex = 19;
+            this.label14.Text = "Start Time:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(59, 138);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(100, 20);
+            this.label15.TabIndex = 17;
+            this.label15.Text = "Event Name:";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
+            // 
+            // txtUpdateChlngeName
+            // 
+            this.txtUpdateChlngeName.Location = new System.Drawing.Point(164, 74);
+            this.txtUpdateChlngeName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUpdateChlngeName.Name = "txtUpdateChlngeName";
+            this.txtUpdateChlngeName.Size = new System.Drawing.Size(234, 26);
+            this.txtUpdateChlngeName.TabIndex = 16;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(26, 77);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(130, 20);
+            this.label16.TabIndex = 15;
+            this.label16.Text = "Challenge Name:";
+            // 
             // ChallengeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(1064, 713);
+            this.Controls.Add(this.panelUpdateChallenge);
             this.Controls.Add(this.panelAddChallenge);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnChlngeComplete);
@@ -481,9 +745,12 @@
             this.Controls.Add(this.lstChallenge);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ChallengeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Challenge Maintenance";
             this.panelAddChallenge.ResumeLayout(false);
             this.panelAddChallenge.PerformLayout();
+            this.panelUpdateChallenge.ResumeLayout(false);
+            this.panelUpdateChallenge.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -528,5 +795,20 @@
         private System.Windows.Forms.Button btnSaveChlnge;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.DateTimePicker txtAddStartTime;
+        private System.Windows.Forms.Panel panelUpdateChallenge;
+        private System.Windows.Forms.TextBox txtUpdateEventName;
+        private System.Windows.Forms.TextBox txtUpdateChlngeID;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.DateTimePicker txtUpdateStartTime;
+        private System.Windows.Forms.Button btnUpdateCancel;
+        private System.Windows.Forms.Button btnUpdateSave;
+        private System.Windows.Forms.DomainUpDown txtUpdateCapacity;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtUpdateChlngeName;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtUpdateStatus;
     }
 }

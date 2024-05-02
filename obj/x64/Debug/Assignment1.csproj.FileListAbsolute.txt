@@ -15,3 +15,7 @@ C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assi
 C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.ChallengeForm.resources
 C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.CompetitorReportForm.resources
 C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.EventReportForm.resources
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.EventForm.resources
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.CompetitorForm.resources
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.CompetitorChallengeForm.resources
+C:\Users\64204\OneDrive - Unitec NZ\YogiNehra\Learning ASP.NET\ISCG6421 GUI\Assignment1\obj\x64\Debug\Assignment1.ArenaReportForm.resources

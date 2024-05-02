@@ -37,7 +37,7 @@ namespace Assignment1
 
             dtArena = dsNZST.Tables["Arena"];
             dtChallenge = dsNZST.Tables["Challenge"];
-            dtChallengeCompetitor = dsNZST.Tables["ChallengeCompetitor"];
+            dtChallengeCompetitor = dsNZST.Tables["Entry"];
             dtCompetitor = dsNZST.Tables["Competitor"];
             dtEvent = dsNZST.Tables["Event"];
 
@@ -52,6 +52,17 @@ namespace Assignment1
         public void UpdateChallenge() { 
             daChallenge.Update(dtChallenge);
         }
-
+        public void UpdateEvent()
+        {
+            daEvent.Update(dtEvent);
+        }
+        public void UpdateCompetitor()
+        {
+            daCompetitor.Update(dtCompetitor);
+        }
+        public void UpdateChallengeCompetitor()
+        {
+            daChallengeCompetitor.Update(dtChallengeCompetitor);
+        }
     }
 }

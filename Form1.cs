@@ -23,6 +23,7 @@ namespace Assignment1
         private CompetitorChallengeForm frmCompetitorChallenge;
         private EventReportForm frmEventReport;
         private CompetitorReportForm frmCompetitorReport;
+        private ArenaReportForm frmArenaReport;
 
 
 
@@ -65,7 +66,12 @@ namespace Assignment1
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            //Enter Competitor into Challenge
+            if (frmCompetitorChallenge == null)
+            {
+                frmCompetitorChallenge = new CompetitorChallengeForm(DM, this);
+            }
+            frmCompetitorChallenge.ShowDialog();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -81,7 +87,7 @@ namespace Assignment1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Event Form
+            // Event Maintenance Form
             if (frmEvent == null)
             {
                 frmEvent = new EventForm(DM, this);
@@ -107,6 +113,112 @@ namespace Assignment1
                 frmCompetitorReport = new CompetitorReportForm(DM, this);
             }
             frmCompetitorReport.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //Competitor Maintenance Form
+            if (frmCompetitor == null)
+            {
+                frmCompetitor = new CompetitorForm(DM, this);
+            }
+            frmCompetitor.ShowDialog();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            //Arena Report btn
+            if (frmArenaReport == null)
+            {
+                frmArenaReport = new ArenaReportForm(DM, this);
+            }
+            frmArenaReport.ShowDialog();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            // Arena Form
+            if (frmArena == null)
+            {
+                frmArena = new ArenaForm(DM, this);
+            }
+            frmArena.ShowDialog();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            // Event Maintenance Form
+            if (frmEvent == null)
+            {
+                frmEvent = new EventForm(DM, this);
+            }
+            frmEvent.ShowDialog();
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            // Challenge Maintenance Form
+            if (frmChallenge == null)
+            {
+                frmChallenge = new ChallengeForm(DM, this);
+            }
+            frmChallenge.ShowDialog();
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            //Competitor Maintenance Form
+            if (frmCompetitor == null)
+            {
+                frmCompetitor = new CompetitorForm(DM, this);
+            }
+            frmCompetitor.ShowDialog();
+        }
+
+        private void iconButton9_Click(object sender, EventArgs e)
+        {
+            //Exit
+            Close();
+        }
+
+        private void iconButton8_Click(object sender, EventArgs e)
+        {
+            //Arena Report btn
+            if (frmArenaReport == null)
+            {
+                frmArenaReport = new ArenaReportForm(DM, this);
+            }
+            frmArenaReport.ShowDialog();
+        }
+
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+            //Enter Competitor into Challenge
+            if (frmCompetitorChallenge == null)
+            {
+                frmCompetitorChallenge = new CompetitorChallengeForm(DM, this);
+            }
+            frmCompetitorChallenge.ShowDialog();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            // Competitors Report
+            if (frmCompetitorReport == null)
+            {
+                frmCompetitorReport = new CompetitorReportForm(DM, this);
+            }
+            frmCompetitorReport.ShowDialog();
+        }
+
+        private void iconButton6_Click(object sender, EventArgs e)
+        {
+            // Event Report
+            if (frmEventReport == null)
+            {
+                frmEventReport = new EventReportForm(DM, this);
+            }
+            frmEventReport.ShowDialog();
         }
     }
 }

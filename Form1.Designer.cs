@@ -29,132 +29,219 @@
         private void InitializeComponent()
         {
             this.grpMaintenance = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.grpReporting = new System.Windows.Forms.GroupBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.iconButton9 = new FontAwesome.Sharp.IconButton();
+            this.iconButton8 = new FontAwesome.Sharp.IconButton();
+            this.iconButton7 = new FontAwesome.Sharp.IconButton();
+            this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.grpMaintenance.SuspendLayout();
             this.grpReporting.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpMaintenance
             // 
-            this.grpMaintenance.Controls.Add(this.button5);
-            this.grpMaintenance.Controls.Add(this.button4);
-            this.grpMaintenance.Controls.Add(this.button3);
-            this.grpMaintenance.Controls.Add(this.button2);
-            this.grpMaintenance.Controls.Add(this.button1);
+            this.grpMaintenance.Controls.Add(this.iconButton5);
+            this.grpMaintenance.Controls.Add(this.iconButton4);
+            this.grpMaintenance.Controls.Add(this.iconButton3);
+            this.grpMaintenance.Controls.Add(this.iconButton2);
+            this.grpMaintenance.Controls.Add(this.iconButton1);
             this.grpMaintenance.Location = new System.Drawing.Point(48, 52);
             this.grpMaintenance.Name = "grpMaintenance";
-            this.grpMaintenance.Size = new System.Drawing.Size(300, 372);
+            this.grpMaintenance.Size = new System.Drawing.Size(391, 428);
             this.grpMaintenance.TabIndex = 0;
             this.grpMaintenance.TabStop = false;
             this.grpMaintenance.Text = "Maintenance";
             // 
-            // button5
+            // iconButton5
             // 
-            this.button5.Location = new System.Drawing.Point(44, 291);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(207, 63);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Enter Competetior into Challenge ";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.iconButton5.BackColor = System.Drawing.Color.PaleGreen;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton5.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Users;
+            this.iconButton5.IconColor = System.Drawing.Color.Black;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton5.Location = new System.Drawing.Point(16, 339);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Size = new System.Drawing.Size(353, 71);
+            this.iconButton5.TabIndex = 9;
+            this.iconButton5.Text = "Enter Competetior into Challenge ";
+            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton5.UseVisualStyleBackColor = false;
+            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
-            // button4
+            // iconButton4
             // 
-            this.button4.Location = new System.Drawing.Point(44, 212);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(207, 48);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Competetior Maintenance";
-            this.button4.UseVisualStyleBackColor = true;
+            this.iconButton4.BackColor = System.Drawing.Color.PaleGreen;
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton4.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Trophy;
+            this.iconButton4.IconColor = System.Drawing.Color.Black;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.Location = new System.Drawing.Point(16, 262);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Size = new System.Drawing.Size(353, 71);
+            this.iconButton4.TabIndex = 8;
+            this.iconButton4.Text = "Competitor Maintenance";
+            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton4.UseVisualStyleBackColor = false;
+            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
             // 
-            // button3
+            // iconButton3
             // 
-            this.button3.Location = new System.Drawing.Point(44, 158);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(207, 48);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Challenge Maintenance";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.iconButton3.BackColor = System.Drawing.Color.LimeGreen;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Ticket;
+            this.iconButton3.IconColor = System.Drawing.Color.Black;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.Location = new System.Drawing.Point(16, 185);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(353, 71);
+            this.iconButton3.TabIndex = 7;
+            this.iconButton3.Text = "Challenge Maintenance";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
-            // button2
+            // iconButton2
             // 
-            this.button2.Location = new System.Drawing.Point(44, 105);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(207, 48);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Event Maintenance";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.iconButton2.BackColor = System.Drawing.Color.ForestGreen;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Calendar;
+            this.iconButton2.IconColor = System.Drawing.Color.Black;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.Location = new System.Drawing.Point(16, 106);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(353, 73);
+            this.iconButton2.TabIndex = 6;
+            this.iconButton2.Text = "Event Maintenance";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
-            // button1
+            // iconButton1
             // 
-            this.button1.Location = new System.Drawing.Point(44, 51);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(207, 48);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Arena Maintenance";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.iconButton1.BackColor = System.Drawing.Color.ForestGreen;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Building;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(16, 29);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(353, 71);
+            this.iconButton1.TabIndex = 5;
+            this.iconButton1.Text = "Arena Maintenance";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // grpReporting
             // 
-            this.grpReporting.Controls.Add(this.button8);
-            this.grpReporting.Controls.Add(this.button7);
-            this.grpReporting.Controls.Add(this.button6);
-            this.grpReporting.Location = new System.Drawing.Point(444, 65);
+            this.grpReporting.Controls.Add(this.iconButton9);
+            this.grpReporting.Controls.Add(this.iconButton8);
+            this.grpReporting.Controls.Add(this.iconButton7);
+            this.grpReporting.Controls.Add(this.iconButton6);
+            this.grpReporting.Location = new System.Drawing.Point(502, 52);
             this.grpReporting.Name = "grpReporting";
-            this.grpReporting.Size = new System.Drawing.Size(298, 358);
+            this.grpReporting.Size = new System.Drawing.Size(375, 428);
             this.grpReporting.TabIndex = 1;
             this.grpReporting.TabStop = false;
             this.grpReporting.Text = "Reporting";
             // 
-            // button8
+            // iconButton9
             // 
-            this.button8.Location = new System.Drawing.Point(50, 294);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(207, 48);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Exit";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.iconButton9.BackColor = System.Drawing.Color.DimGray;
+            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton9.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.iconButton9.IconColor = System.Drawing.Color.Black;
+            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton9.Location = new System.Drawing.Point(16, 339);
+            this.iconButton9.Name = "iconButton9";
+            this.iconButton9.Size = new System.Drawing.Size(353, 71);
+            this.iconButton9.TabIndex = 11;
+            this.iconButton9.Text = "Exit";
+            this.iconButton9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton9.UseVisualStyleBackColor = false;
+            this.iconButton9.Click += new System.EventHandler(this.iconButton9_Click);
             // 
-            // button7
+            // iconButton8
             // 
-            this.button7.Location = new System.Drawing.Point(50, 105);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(207, 48);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Competitor Report";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.iconButton8.BackColor = System.Drawing.Color.LemonChiffon;
+            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton8.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.Paste;
+            this.iconButton8.IconColor = System.Drawing.Color.Black;
+            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton8.Location = new System.Drawing.Point(16, 183);
+            this.iconButton8.Name = "iconButton8";
+            this.iconButton8.Size = new System.Drawing.Size(353, 71);
+            this.iconButton8.TabIndex = 10;
+            this.iconButton8.Text = "Arena Report";
+            this.iconButton8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton8.UseVisualStyleBackColor = false;
+            this.iconButton8.Click += new System.EventHandler(this.iconButton8_Click);
             // 
-            // button6
+            // iconButton7
             // 
-            this.button6.Location = new System.Drawing.Point(50, 38);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(207, 48);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Event Report";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.iconButton7.BackColor = System.Drawing.Color.Khaki;
+            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton7.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Paste;
+            this.iconButton7.IconColor = System.Drawing.Color.Black;
+            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton7.Location = new System.Drawing.Point(16, 106);
+            this.iconButton7.Name = "iconButton7";
+            this.iconButton7.Size = new System.Drawing.Size(353, 71);
+            this.iconButton7.TabIndex = 10;
+            this.iconButton7.Text = "Competitor Report";
+            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton7.UseVisualStyleBackColor = false;
+            this.iconButton7.Click += new System.EventHandler(this.iconButton7_Click);
+            // 
+            // iconButton6
+            // 
+            this.iconButton6.BackColor = System.Drawing.Color.Gold;
+            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Paste;
+            this.iconButton6.IconColor = System.Drawing.Color.Black;
+            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton6.Location = new System.Drawing.Point(16, 29);
+            this.iconButton6.Name = "iconButton6";
+            this.iconButton6.Size = new System.Drawing.Size(353, 71);
+            this.iconButton6.TabIndex = 10;
+            this.iconButton6.Text = "Event Report";
+            this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton6.UseVisualStyleBackColor = false;
+            this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 449);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(999, 558);
             this.Controls.Add(this.grpReporting);
             this.Controls.Add(this.grpMaintenance);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grpMaintenance.ResumeLayout(false);
@@ -166,15 +253,16 @@
         #endregion
 
         private System.Windows.Forms.GroupBox grpMaintenance;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox grpReporting;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton iconButton9;
+        private FontAwesome.Sharp.IconButton iconButton8;
+        private FontAwesome.Sharp.IconButton iconButton7;
+        private FontAwesome.Sharp.IconButton iconButton6;
     }
 }
 
